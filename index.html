@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/fa783a8110.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main-container">
+        <nav id="nav-bar">
+            <section id="nav-menus">
+                <div class="menu-items"><i class="fas fa-inbox"></i>Inbox</div>
+                <div class="menu-items"><i class="far fa-star"></i>Today</div>
+                <div class="menu-items"><i class="far fa-calendar"></i> Upcoming</div>
+                <div class="menu-items"><i class="far fa-calendar"></i> Anytime</div>
+                <div class="menu-items"><i class="far fa-clipboard"></i> Someday</div>
+                <div class="menu-items"><i class="far fa-trash-alt"></i> Trash</div>
+            </section>     
+            <section id="nav-list1">
+                <label class="nav-list-container">
+                    <input type="radio" checked="checked" name="nav-list1-selection" class="default-checkbox">
+                    <span class="new-checkbox"></span><span class="text-element">Family</span>
+                </label>
+                <label class="nav-list-container">
+                    <input type="radio" name="nav-list1-selection" class="default-checkbox">
+                    <span class="new-checkbox"></span><span class="text-element">Vacation Planning</span>
+                </label>
+                <label class="nav-list-container">
+                    <input type="radio" name="nav-list1-selection" class="default-checkbox">
+                    <span class="new-checkbox"></span><span class="text-element">Buy a new car</span>
+                </label>
+                <label class="nav-list-container">
+                    <input type="radio" name="nav-list1-selection" class="default-checkbox">
+                    <span class="new-checkbox"></span><span class="text-element">Festival Ideas</span>
+                </label>
+            </section>    
+            <section id="nav-list2">
+                <label class="nav-list-container">
+                    <input type="radio" checked="checked" name="nav-list2-selection" class="default-checkbox">
+                    <span class="new-checkbox"></span><span class="text-element">Work</span>
+                </label>
+                <label class="nav-list-container">
+                    <input type="radio" name="nav-list2-selection" class="default-checkbox">
+                    <span class="new-checkbox"></span><span class="text-element">Onboarding Plan</span>
+                </label>
+                <label class="nav-list-container">
+                    <input type="radio" name="nav-list2-selection" class="default-checkbox">
+                    <span class="new-checkbox"></span><span class="text-element">Invoice Review</span>
+                </label>
+                <label class="nav-list-container">
+                    <input type="radio" name="nav-list2-selection" class="default-checkbox">
+                    <span class="new-checkbox"></span><span class="text-element">Presentation Work</span>
+                </label>
+            </section>  
+            <i class="fas fa-plus"></i>           
+        </nav>
+        <main id="tasks-section">
+            <h1>Today Task</h1>
+            <section id="tasks-tab-wrapper">
+                <div class="tasks-tab">
+                    <span class="task-badge">10</span>
+                    <span>All</span>
+                </div>
+                <div class="tasks-tab">
+                    <span>Important</span>
+                </div>
+                <div class="tasks-tab active">
+                    <span class="task-badge">05</span>
+                    <span>Notes</span>
+                </div>
+                <div class="tasks-tab">
+                    <span>Links</span>
+                </div>
+            </section>
+            <article id="tasks-checklist-section">
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" checked="checked" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Create Userflow Social Application Design</span>
+                    </label>
+                    <button class="approved">Approved</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" checked="checked" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Homepage Design for Slimmuch Product</span>
+                    </label>
+                    <button class="in-progress">In Progress</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" checked="checked" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Interactive prototype design - Web design</span>
+                    </label>
+                    <button class="in-review">In Review</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" checked="checked" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Create Application Design for Topbuzz</span>
+                    </label>
+                    <button class="in-review">In Review</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Make a Wireframe for Courier Delivery app</span>
+                    </label>
+                    <button class="in-progress">In Progress</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Create Marketplaces Dashboard Design</span>
+                    </label>
+                    <button class="waiting">Waiting</button>
+                </div>
+            </article>
+            <div id="upcoming-tasks-heading">
+                <h1 style="padding:0">Upcoming tasks</h1>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <article id="upcoming-tasks-section">
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" checked="checked" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Make a Wireframe for Courier Delivery app</span>
+                    </label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Create Marketplaces Dashboard Design</span>
+                    </label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" checked="checked" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Make a Wireframe for Courier Delivery app</span>
+                    </label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Create Marketplaces Dashboard Design</span>
+                    </label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" checked="checked" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Make a Wireframe for Courier Delivery app</span>
+                    </label>
+                    <button class="waiting">Waiting</button>
+                </div>
+                <div class="tasks-checklist">
+                    <label class="tasks-checklist-container">
+                        <input type="checkbox" checked="checked" class="tasks-checklist-default-checkbox">
+                        <span class="tasks-checklist-new-checkbox"></span>
+                        <span class="text">Create Marketplaces Dashboard Design</span>
+                    </label>
+                    <button class="waiting">Waiting</button>
+                </div>
+            </article>
+        </main>
+        <aside id="meetings-section">
+            <section id="meetings-notif">
+                <i class="fas fa-user-friends"></i>
+                <span>5</span>
+            </section>
+            <p>Meetings Schedule</p>
+            <section id="meetings-card-section">
+                <article class="meetings-card">
+                    <div class="meetings-timing">
+                        <p>8:05 AM - 9:20 AM</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <p>Meetings Nazmul Hassan</p>
+                    <div class="card-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/47.jpg" class="avatars">
+                        <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" class="avatars">
+                    </div>
+                </article>
+                <article class="meetings-card">
+                    <div class="meetings-timing">
+                        <p>10:05 AM - 12:20 PM</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <p>Product Development Team</p>
+                    <div class="card-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="avatars">
+                        <span class="card-status"><i class="fas fa-check"></i>You Joined</span>
+                    </div>
+                </article>
+                <article class="meetings-card">
+                    <div class="meetings-timing">
+                        <p>3:00 PM - 4:20 PM</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <p>Product Planning</p>
+                    <div class="card-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/47.jpg" class="avatars">
+                        <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" class="avatars">
+                    </div>
+                </article>
+                <article class="meetings-card">
+                    <div class="meetings-timing">
+                        <p>4:30 PM - 5:30 PM</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <p>Social Product Review</p>
+                    <div class="card-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="avatars">
+                        <span class="card-status">+13 Members</span>
+                    </div>
+                </article>
+                <article class="meetings-card">
+                    <div class="meetings-timing">
+                        <p>8:05 AM - 9:20 AM</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <p>Meetings Nazmul Hassan</p>
+                    <div class="card-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/47.jpg" class="avatars">
+                        <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" class="avatars">
+                    </div>
+                </article>
+                <article class="meetings-card">
+                    <div class="meetings-timing">
+                        <p>10:05 AM - 12:20 PM</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <p>Product Development Team</p>
+                    <div class="card-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="avatars">
+                        <span class="card-status"><i class="fas fa-check"></i>You Joined</span>
+                    </div>
+                </article>
+                <article class="meetings-card">
+                    <div class="meetings-timing">
+                        <p>3:00 PM - 4:20 PM</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <p>Product Planning</p>
+                    <div class="card-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/47.jpg" class="avatars">
+                        <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" class="avatars">
+                    </div>
+                </article>
+                <article class="meetings-card">
+                    <div class="meetings-timing">
+                        <p>4:30 PM - 5:30 PM</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <p>Social Product Review</p>
+                    <div class="card-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" class="avatars">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="avatars">
+                        <span class="card-status">+13 Members</span>
+                    </div>
+                </article>
+            </section>
+        </aside>
+    </div>
+</body>
+</html>
